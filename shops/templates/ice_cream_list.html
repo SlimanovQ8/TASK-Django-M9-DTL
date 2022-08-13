@@ -10,6 +10,10 @@
     <div>
       {% for ice_cream in ice_creams %}
         <h1>{{ice_cream.id}} - {{ice_cream.name}}</h1>
+
+                <h2>flavors: </h2> {% for flavors in ice_cream.flavors.all %} <p> {{ flavors }}</p>{% endfor %}
+
+
           <a href="{%url 'ice cream details' ice_cream_id=ice_cream.id %}"><button>Details</button></a>
 
 
