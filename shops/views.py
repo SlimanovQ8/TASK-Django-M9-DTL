@@ -13,7 +13,7 @@ def get_ice_cream(request, ice_cream_id):
         context = {
             "IceCream": {
                 "name": getIceCream.name,
-                "shop": getIceCream.shop,
+                "shop": getIceCream.shop.name,
                 "stock": getIceCream.stock,
             }
         }

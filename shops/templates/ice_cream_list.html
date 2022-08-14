@@ -13,8 +13,9 @@
 
                 <h2>flavors: </h2> {% for flavors in ice_cream.flavors.all %} <p> {{ flavors }}</p>{% endfor %}
 
+          <h2> shop name: {{ ice_cream.shop }}</h2>
 
-          <a href="{%url 'ice cream details' ice_cream_id=ice_cream.id %}"><button>Details</button></a>
+          <a href="{%url 'ice-cream-detail' ice_cream_id=ice_cream.id %}"><button>Details</button></a>
 
 
 
